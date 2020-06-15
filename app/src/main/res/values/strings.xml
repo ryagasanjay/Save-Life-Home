@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Save Life Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="hospitals">
+        <item>Montreal General Hospital</item>
+        <item>McGill University Hralth Centre</item>
+        <item>Jewish General Hospital</item>
+        <item>St.Mary Hospital</item>
+        <item>CHUM</item>
+        <item>Shriners Hospitals for Children</item>
+        <item>Hopital du Sacre-Coeur de Montreal</item>
+    </string-array>
+    <string-array name="address">
+        <item>1650 Cedar Ave, Montreal, Quebec H3G 1A4, Canada</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

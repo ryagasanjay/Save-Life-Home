@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    tools:context=".EssentialServices">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cardview_dark_background"
+            android:padding="10dp"
+            android:text="Request Essential Services"
+            android:textAllCaps="false"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#009688"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/req_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#009688"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/req_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Category"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#009688"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/req_category"
+            android:layout_width="match_parent"
+            android:layout_height="117dp">
+
+            <RadioButton
+                android:id="@+id/req_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food and Groceries" />
+
+            <RadioButton
+                android:id="@+id/req_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health Care" />
+
+            <RadioButton
+                android:id="@+id/req_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Care" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Instructions: "
+            android:textColor="#009688"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/req_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="#E4F4D1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Write your instructions here.."
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/request_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:ellipsize="end"
+            android:text="Request Service"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
