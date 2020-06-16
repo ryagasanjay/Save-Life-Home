@@ -70,12 +70,12 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/contact_address"
+            android:id="@+id/contact_addresses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="Enter Address"
+            android:hint="Enter Details like Names and addresses of your contacts.."
             android:inputType="textMultiLine" />
 
         <Button
