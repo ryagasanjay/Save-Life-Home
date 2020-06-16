@@ -7,6 +7,7 @@
     tools:context=".MainScreen">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_controller_view_tag"
         android:layout_width="411dp"
         android:layout_height="88dp"
         android:background="#33CFC3"
@@ -22,6 +23,7 @@
         android:layout_width="409dp"
         android:layout_height="640dp"
         app:defaultNavHost="true"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

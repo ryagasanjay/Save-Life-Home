@@ -1,5 +1,6 @@
 package com.example.savelifehome;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +46,37 @@ public class Home extends Fragment {
         return fragment;
     }
 
+    final View.OnClickListener mListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.TestCenter:
+                    Intent t = new Intent(getActivity(), TestCenter.class);
+                    startActivity(t);
+                    break;
+                case R.id.Report:
+                    Intent r = new Intent(getActivity(), Report.class);
+                    startActivity(r);
+                    break;
+                case R.id.Volunteer:
+                    Intent v = new Intent(getActivity(), Volunteer.class);
+                    startActivity(v);
+                    break;
+                case R.id.News:
+                    Intent n = new Intent(getActivity(), NewsOrAnnouncements.class);
+                    startActivity(n);
+                    break;
+                case R.id.requestServices:
+                    Intent rs = new Intent(getActivity(), EssentialServices.class);
+                    startActivity(rs);
+                    break;
+                case R.id.ContactTracing:
+                    startActivity(new Intent(getActivity(), ContactTracing.class));
+                    break;
+            }
+        }
+    };
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +91,28 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+
+
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        view.findViewById(R.id.TestCenter).setOnClickListener(mListener);
+        view.findViewById(R.id.Volunteer).setOnClickListener(mListener);
+        view.findViewById(R.id.News).setOnClickListener(mListener);
+        view.findViewById(R.id.ContactTracing).setOnClickListener(mListener);
+        view.findViewById(R.id.requestServices).setOnClickListener(mListener);
+        view.findViewById(R.id.Report).setOnClickListener(mListener);
+
+
+        //Inflate the layout for this fragment
+        //  Button toTest = (Button) view.findViewById(R.id.TestCenter);
+        // toTest.setOnClickListener(new View.OnClickListener() {
+        //   @Override
+        //public void onClick(View view) {
+        //Intent intent = new Intent(getActivity(), TestCenter.class);
+        // startActivity(intent);
+
+        //}
+        //});
+
+        return view;
     }
 }

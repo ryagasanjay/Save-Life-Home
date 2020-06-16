@@ -17,11 +17,11 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/cardview_dark_background"
+            android:background="@color/design_default_color_secondary"
             android:padding="10dp"
             android:text="Request Essential Services"
             android:textAllCaps="false"
-            android:textColor="#2196F3"
+            android:textColor="#5A5252"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -108,8 +108,9 @@
             android:id="@+id/req_instructions"
             android:layout_width="match_parent"
             android:layout_height="104dp"
-            android:background="#E4F4D1"
+            android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
             android:ems="10"
+            android:background="#fff"
             android:gravity="start|top"
             android:hint="Write your instructions here.."
             android:inputType="textMultiLine" />
@@ -118,7 +119,8 @@
             android:id="@+id/request_service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#4CAF50"
+            android:layout_marginTop="20dp"
+            android:background="#009688"
             android:ellipsize="end"
             android:text="Request Service"
             android:textStyle="bold" />

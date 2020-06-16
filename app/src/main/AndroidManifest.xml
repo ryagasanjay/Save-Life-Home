@@ -3,6 +3,7 @@
     package="com.example.savelifehome">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Volunteer"></activity>
+        <activity android:name=".Report"></activity>
+        <activity android:name=".Contactinfo" />
+        <activity android:name=".SelfCheck" />
+        <activity android:name=".Volunteer" />
         <activity android:name=".NewsOrAnnouncements" />
         <activity android:name=".ContactTracing" />
         <activity android:name=".Login" />

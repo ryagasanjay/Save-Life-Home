@@ -21,14 +21,18 @@
         android:layout_width="410dp"
         android:layout_height="54dp"
         android:layout_marginTop="180dp"
+        android:padding="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#009688"
         android:text="Volunteer Services : In this difficult situation help people who are in need makes you a real hero"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Rbuton1"
+        android:id="@+id/registerVolunteer"
         android:layout_width="217dp"
         android:layout_height="43dp"
         android:layout_marginBottom="48dp"
@@ -40,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextPersonName"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="48dp"
@@ -63,6 +67,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

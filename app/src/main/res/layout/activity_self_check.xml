@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelfCheck">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Self Check"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Are you currently experiencing any of these issue ?"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="40dp"
+        android:text="Severe difficulty in breathing ?"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:text="(Struglling for each breath,able to speak few words)"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="40dp"
+        android:text="Severe Chestpain ?"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:text="(Constant tightness and severe pain)"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="40dp"
+        android:text="Did you meet somebody who has travelled in last 14 days?"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="40dp"
+        android:text="Losing consciouness ?"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="Yes"
+            android:text="Yes" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="#FF6347"
+            android:onClick="home"
+            android:text="No" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,125 +7,87 @@
     tools:context=".ContactTracing">
 
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="136dp"
-        android:background="#2196F3"
-        android:text="ADD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:hint="Enter address"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        app:layout_constraintVertical_bias="0.076" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="44dp"
-        android:ems="10"
-        android:hint="Enter name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        <TextView
+            android:id="@+id/contactHeading"
+            android:layout_width="361dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Contact Trace"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#009688"
+            android:textSize="30sp" />
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="179dp"
-        android:layout_height="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077"
-        app:srcCompat="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="367dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginEnd="38dp"
-        android:text="Add contacts of people or places you visited in past 15 days"
-        android:textColor="#009688"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.037" />
+        <TextView
+            android:id="@+id/contactSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="40dp"
+            android:text="Help us keep your Friends and Family Safe.\nAdd contacts of people or places you visited in past 15 days."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3cb371"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="66dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="44dp"
-        android:text="Name"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        <EditText
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="Enter name"
+            android:inputType="textPersonName" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="70dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="48dp"
-        android:text="Phone no"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.098" />
+        <EditText
+            android:id="@+id/contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="Enter Phone"
+            android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="320dp"
-        android:ems="10"
-        android:hint="Enter phone number"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/editText7"
-        app:layout_constraintVertical_bias="0.916" />
+        <EditText
+            android:id="@+id/contact_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Address"
+            android:inputType="textMultiLine" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="67dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="48dp"
-        android:text="Address"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editText9"
-        app:layout_constraintHorizontal_bias="0.021"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.123" />
+        <Button
+            android:id="@+id/addContact"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginBottom="136dp"
+            android:background="#2196F3"
+            android:text="ADD" />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
