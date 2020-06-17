@@ -64,5 +64,4 @@ public class NewsOrAnnouncements extends AppCompatActivity {
 
 //
     }
-
 }
