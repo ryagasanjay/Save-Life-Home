@@ -35,12 +35,33 @@
                 android:layout_weight="1"
                 android:src="@drawable/imgone" />
 
-            <TextView
-                android:id="@+id/textView25"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="40dp"
+                    android:text="Mental Health and Substance Use Support"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/mhealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="more info"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -55,12 +76,33 @@
                 android:layout_weight="1"
                 android:src="@drawable/imgtwo" />
 
-            <TextView
-                android:id="@+id/textView26"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="40dp"
+                    android:text="If you get sick"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/usick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="more info"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -75,12 +117,33 @@
                 android:layout_weight="1"
                 android:src="@drawable/imgthree" />
 
-            <TextView
-                android:id="@+id/textView27"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="40dp"
+                    android:text="Prevention"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/precaution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="more info"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -95,12 +158,33 @@
                 android:layout_weight="1"
                 android:src="@drawable/imgfour" />
 
-            <TextView
-                android:id="@+id/textView28"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="40dp"
+                    android:text="About Corona"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/aboutcorona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="more info"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 

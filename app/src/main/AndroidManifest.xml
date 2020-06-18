@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.savelifehome">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Report"></activity>
+        <activity android:name=".Precaution" />
+        <activity android:name=".Mental_health" />
+        <activity android:name=".Ifgetsick" />
+        <activity android:name=".Covid_track" />
+        <activity android:name=".Report" />
         <activity android:name=".Contactinfo" />
         <activity android:name=".SelfCheck" />
         <activity android:name=".Volunteer" />
